@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #8f8f8f;    
+}
+
+header {
+    width: 100%;
+    text-align: start;
+}
+
+.logo {
+    margin: 1em;
+    color: white;
+}
+
+main {
+    height: 98vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    text-align: center;
+}
+
+main p {
+    margin: 0.4em 0 0.4em 0;
+    font-size: x-large;
+    color: white;
+}
+
+li, p {
+    text-align: justify;
+}
+
+.container-input {
+    max-width: 400px;
+}
+
+.container-input span {
+    font-size: 22px;
+    color: white;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 7px;
+    background-color: black;
+    height: 20px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+
+#container-numero {
+    font-weight: bold;
+}
+
+.titulo {
+    min-width: 320px;
+    margin: 1em 0;
+}
+
+.button-cta {
+    height: 60px;
+    border-radius: 2px;
+    min-width: 320px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button-cta:hover {
+    background-color: #c5c4c4;
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.container-password {
+    max-width: 400px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.password {
+    padding: 1em;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.70);
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.password:hover {
+    transform: scale(1.03);
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .content {
+    visibility: visible;        
+    top: 30px;
+    opacity: 1;
+}   
+
+#copied {
+    font-size: large;
+    display: none;
+    color: green;
+}
+
+#conteudo-1 {
+    margin-bottom: 21em;
+}
+
+#conteudo {
+    margin: 0.5em 0 0 0;
+    padding: 1em;
+    background-color: white;
+}
+
+#conteudo > article {
+    max-width: 90%;
+    padding: 2em;
+}
+
+#conteudo > article > h3 {
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+#conteudo > article > p {    
+    text-align: justify;
+}
+
+#conteudo p {
+    margin: 0.8em;
+}
+
+ol > li {
+    margin: 0.8em;
+}
+
+ol {
+    margin-left: 1em;
+}
+
+@media (max-width: 320px) {
+    #conteudo {
+        padding: 1.25em;
+    }
+}
