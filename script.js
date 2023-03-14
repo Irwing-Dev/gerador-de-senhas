@@ -9,7 +9,6 @@ let containerPassword = document.querySelector("#container-password");
 
 let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/*#%&;!.,";
 let nums = "1234567890";
-let novaSenha = "";
 
 sizePassword.innerHTML = sliderElement.value;
 
@@ -25,7 +24,6 @@ function generatePassword() {
 }
     containerPassword.classList.remove("hide");
     password.innerHTML = pass;
-    novaSenha += pass; 
 }
 
 function generatePasswordPin() {
@@ -36,11 +34,9 @@ function generatePasswordPin() {
 }
     containerPassword.classList.remove("hide");
     password.innerHTML = pass;
-    novaSenha += pass; 
 }
 
 function copyPassword() {
-    navigator.clipboard.writeText(novaSenha)
-    novaSenha = " "
+    navigator.clipboard.writeText(password.textContent);
     copied.style.display = "flex"
 }
