@@ -12,6 +12,16 @@ let nums = "1234567890";
 
 sizePassword.innerHTML = sliderElement.value;
 
+function openNav() {
+    document.getElementById("my-nav").style.width = "400px"
+    document.getElementById("my-nav").style.height = "500px"
+}
+
+function closeNav() {
+    document.getElementById("my-nav").style.width = "0"
+    document.getElementById("my-nav").style.height = "0"
+}
+
 slider.oninput = function () {
     sizePassword.innerHTML = this.value
 }
