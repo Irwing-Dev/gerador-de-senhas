@@ -1,8 +1,9 @@
 let sliderElement = document.querySelector("#slider");
 let buttonElement = document.querySelector("#button");
-let copied = document.getElementById("copied")
+let copied = document.getElementById("copied");
+let copyMessage = document.querySelector(".copy-message");
 
-let sizePassword = document.querySelector("#numero");
+let sizePassword = document.querySelector("#number");
 let password = document.getElementById('password');
 
 let containerPassword = document.querySelector("#container-password");
@@ -11,6 +12,17 @@ let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/*#
 let nums = "1234567890";
 
 sizePassword.innerHTML = sliderElement.value;
+
+function ShowOrHide(show) {
+    if (show == false) {
+        copyMessage.style.display = "none";
+        copied.style.display = "flex";
+    }
+    if (show == true) {
+        copyMessage.style.display = "flex";
+        copied.style.display = "none";
+    }
+}
 
 function openNav() {
     document.getElementById("my-nav").style.width = "400px"
@@ -34,6 +46,8 @@ function generatePassword() {
 }
     containerPassword.classList.remove("hide");
     password.innerHTML = pass;
+    ShowOrHide(true)
+
 }
 
 function generatePasswordPin() {
@@ -44,9 +58,12 @@ function generatePasswordPin() {
 }
     containerPassword.classList.remove("hide");
     password.innerHTML = pass;
+    ShowOrHide(true)
 }
 
 function copyPassword() {
+    ShowOrHide(false)
     navigator.clipboard.writeText(password.textContent);
-    copied.style.display = "flex"
+    copyMessage.style.display = "none";
+    copied.style.display = "flex";
 }

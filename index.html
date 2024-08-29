@@ -11,74 +11,25 @@
 <body>
 
     <header>
-        <h3 class="logo">Gerador de senhas aleatórias</h3>
-        <div id="my-nav">
-            <button onclick="closeNav()" id="close-nav">&times;</button>
-            <nav id="nav-content">
-                <a href="../Estudos/JavaScript/desafios/qr code/index.html">Gerador de QR Code</a>
-                <a href="">Gerador de Lorem Ipsum</a>
-            </nav>
-        </div>
-        <button id="btn-nav" onclick="openNav()">≡</button>
-    </header>    
+        <h3 class="logo">Gerador de senhas</h3>
+        <a href="https://geradordeqrcodes.netlify.app/" id="nav">Gerador de QR Code</a>
+    </header>
     
     <main class="container-input">
         <div>
-            <p id="container-numero">Tamanho: <span id="numero"></span> Caracteres</p>
+            <p id="container-number">Tamanho: <span id="number"></span> Caracteres</p>
             <input id="slider" type="range" class="slider" min="8" max="32" value="12">
             <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
             <p style="text-align: center;"><strong style="color: black;">OU</strong></p>
             <button class="button-cta" onclick="generatePasswordPin()">Gerar senha PIN</button>
         </div>
         <div id="container-password" class="container-password hide">
-            <span class="titulo">Sua senha gerada foi:</span>
-            <span id="password" class="password"  onclick="copyPassword()"></span> <br>
-            <span class="copiar">Clique na senha para copiar</span>
-            <p id="copied">Senha copiada com sucesso!</p>
+            <span class="title-s">Sua senha gerada foi:</span>
+            <span id="password" class="password" onclick="copyPassword()"></span> <br>
+            <span class="copy-message">Clique na senha para copiar</span>
+            <p id="copied"><strong>Senha copiada com sucesso!</strong></p>
         </div>
 </main>
-
-    <footer id="conteudo">
-        <article>
-            <section id="conteudo-1">
-                <h3>O que são senhas fortes?</h3>
-                <p> Senhas fortes são aquelas que são difíceis de adivinhar ou quebrar por hackers ou outras pessoas mal-intencionadas. Elas geralmente têm uma combinação de letras, números e símbolos, além de serem longas, geralmente com mais de oito caracteres. As senhas fortes também são únicas para cada conta e não são compartilhadas com outras pessoas.</p>
-                    <ol> <br>
-                        <h4>Algumas dicas para criar uma boa senha forte são: </h4> <br>
-                        <li>Use uma combinação de <strong>letras, números e símbolos.</strong></li> 
-                        <li>Faça a senha o mais longa possível, porém, que seja fácil de ser lembrada, geralmente <strong>pelo menos oito caracteres</strong>.</li>
-                        <li>Não use palavras comuns ou informações pessoais, como nomes de familiares ou data de nascimento.</li>
-                        <li>Evite usar a mesma senha em várias contas.</li>
-                        <li>Utilize ferramentas de gerenciamento de senhas para armazenar e gerenciar suas senhas de forma segura.</li> <br>
-                    </ol>
-                    <p>É importante saber que mudar suas senhas regularmente pode garantir uma maior segurança a sua conta em relação a ataques feitos por hackers.</p>
-            </section>
-            <section>
-                <h3>Importâncias do uso de senhas fortes: </h3> <br>
-                <p>O uso de senhas fortes é extremamente importante para proteger suas informações pessoais e de acesso.</p> <br>
-                <h4 style="text-align: center;">Veja abaixo cinco razões para o uso de senhas fortes:</h4> <br>
-                        <ol>
-                            <li>
-                                Prevenção de invasão de contas: Senhas fracas são facilmente adivinhadas ou quebradas por hackers. Se uma pessoa conseguir acessar sua conta, ela pode ter acesso a informações confidenciais, como números de cartão de crédito e endereços de e-mail. Além disso, a invasão de conta também pode levar ao envio de spam e vírus para outras pessoas.
-                            </li> <br>
-                            <li>
-                                Proteção de informações pessoais: As senhas fortes protegem suas informações pessoais de serem vistas por outras pessoas. Isso é especialmente importante se você compartilhar um computador ou dispositivo com outras pessoas, como para a família, amigos, etc.
-                            </li> <br>
-                            <li>
-                                Segurança online: Hoje em dia, a maioria das atividades são realizadas online, como compras, bancos e redes sociais. É importante ter senhas fortes para proteger suas informações nessas plataformas afim evitar fraudes e ataques.
-                            </li> <br>
-                            <li>
-                                Evitar problemas legais: Se sua conta for invadida e usada para realizar atividades ilegais, você pode ser responsabilizado pelo crime. Usar senhas fortes pode ajudar a evitar esses tipos de situações.
-                            </li> <br>
-                            <li>
-                                Facilita a sua vida: Pode parecer contra-intuitivo, mas o uso de senhas fortes pode, na verdade, tornar sua vida mais fácil. Se você usar a mesma senha para todas as suas contas, será mais fácil se lembrar dela. No entanto, se uma dessas contas for invadida, todas as suas outras contas também correm o risco de serem invadidas. Usando senhas diferentes e fortes para cada conta, você pode evitar esse problema, apenas tenha cuidado para não esquecê-las.
-                            </li> <br>
-                        </ol>
-                        <p style="text-align: center;">Em resumo, o uso de senhas fortes é crucial para proteger suas informações pessoais e de acesso, bem como para garantir a segurança online e evitar problemas legais. É importante tomar medidas para garantir que suas senhas sejam fortes e seguras.</p>
-            </section>
-        </article>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
